@@ -8,6 +8,9 @@ for key,dur,old,new in [('Immad-01',40.5,'/workspace/work/v2/slides/Immad-01-1.p
  txt=open('/workspace/work/v2/'+key+'.ffconcat').read().replace(old,new);open(R+'/'+key+'.ffconcat','w').write(txt);audio=glob.glob('/workspace/attachments/*/'+key+'*')[0]
  print('ENCODING',key,flush=True)
  run(['ffmpeg','-y','-v','warning','-filter_threads','2','-f','concat','-safe','0','-i',R+'/'+key+'.ffconcat','-i',audio,'-vf',f'fps=24,{move},ass=/workspace/work/{key}.ass,fade=t=in:d=0.35,fade=t=out:st={dur-.3}:d=0.3','-t',str(dur)]+codec+[R+'/'+key+'.mp4'],key+'.log')
+for key in ['Immad-01','Immad-03']:
+ data=json.loads(subprocess.check_output(['ffprobe','-v','error','-select_streams','v:0','-show_entries','stream=start_time,duration','-of','json',R+'/'+key+'.mp4']))['streams'][0]
+ assert float(data['start_time'])<.05 and float(data['duration'])>39,data
 listing=open('/workspace/work/v2/final.ffconcat').read()
 for key in ['Immad-01','Immad-03']:listing=listing.replace('/workspace/work/v2/clips/'+key+'.mp4',R+'/'+key+'.mp4')
 open(R+'/final.ffconcat','w').write(listing)

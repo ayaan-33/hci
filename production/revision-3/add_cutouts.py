@@ -9,4 +9,4 @@ for stage,out in [('team-stage.png','team-with-cutouts.png'),('closing-stage.png
   cut=source.crop((round(j*source.width/4),0,round((j+1)*source.width/4),source.height));cut=cut.crop(cut.getbbox())
   h=470;cut=cut.resize((round(cut.width*h/cut.height),h),Image.Resampling.LANCZOS)
   canvas.alpha_composite(cut,(round(cx-cut.width/2),752-h))
- canvas.convert('RGB').save('/workspace/work/v3/'+out)
+ canvas.save('/workspace/work/v3/'+out)
