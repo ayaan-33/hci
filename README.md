@@ -2,7 +2,7 @@
 
 Revised HCI Tool Talk: chat-style onboarding versus a traditional form.
 
-**Status: review cut.** The 3D opening, original recorded narration, prototype demonstrations, captions, analysis, conclusion and references are assembled. The original four portrait files are still needed for background-only cutouts; no generated substitutes are used.
+**Status: complete with the user-approved cutouts.** The four approved cutouts appear on the 3D team introduction and closing slides, left to right: Raja Suleman, Raj Lakhani, Awais Basheer, Muhammad Immad.
 
 ## Watch
 
@@ -19,7 +19,7 @@ The viewing page includes chapter navigation and a direct MP4 download.
 - Presentation slides rebuilt as actual Blender geometry: raised text, floating cards, a thick layered stage and cast shadows.
 - Scenario footage remains the original flat recording, unchanged from the preceding cut.
 - Opening uses a brighter blue, violet, amber and pink palette, extra parcels and factory details, plus subtle synthesized motor/scanner cues.
-- Original-photo cutouts are still awaiting downloadable originals. An automatic cutout attempt was rejected because it extended bodies beyond their photographed crops; that result is not included.
+- Revision 3 adds the generated cutouts subsequently approved by the user. The supplied approved asset is included in `assets/team-cutouts.png`; only placement and scaling were applied.
 
 ## Sequence
 
