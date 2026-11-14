@@ -14,6 +14,13 @@ Revised HCI Tool Talk: chat-style onboarding versus a traditional form.
 
 The viewing page includes chapter navigation and a direct MP4 download.
 
+## Revision 2
+
+- Presentation slides rebuilt as actual Blender geometry: raised text, floating cards, a thick layered stage and cast shadows.
+- Scenario footage remains the original flat recording, unchanged from the preceding cut.
+- Opening uses a brighter blue, violet, amber and pink palette, extra parcels and factory details, plus subtle synthesized motor/scanner cues.
+- Original-photo cutouts are still awaiting downloadable originals. An automatic cutout attempt was rejected because it extended bodies beyond their photographed crops; that result is not included.
+
 ## Sequence
 
 1. A newly rendered 3D parcel sorter routes a wrongly labelled package to the wrong destination. Synthetic AI narration is used only here.
