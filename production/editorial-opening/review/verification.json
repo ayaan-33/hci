@@ -1,0 +1,12 @@
+{
+  "duration": 8,
+  "frames": 240,
+  "resolution": [
+    1920,
+    960
+  ],
+  "fps": 30,
+  "fullDecode": "passed",
+  "method": "Custom Cycles 3D beauty assets; OIDN denoise; actual camera-depth-driven 2.5D parallax; vector-like Inter type and frosted overlays",
+  "scope": "Visual study, not replacement of the published final video"
+}
