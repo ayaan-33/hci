@@ -1,0 +1,58 @@
+[
+  {
+    "start": 0.45,
+    "window": 4.4,
+    "text": "Imagine sending a birthday cake across town.",
+    "voice": "en-GB-RyanNeural",
+    "originalDuration": 3.264,
+    "tempo": 1
+  },
+  {
+    "start": 5.15,
+    "window": 4.7,
+    "text": "But the delivery system records the wrong address.",
+    "voice": "en-GB-RyanNeural",
+    "originalDuration": 3.264,
+    "tempo": 1
+  },
+  {
+    "start": 10.3,
+    "window": 3.7,
+    "text": "Someone confirms it without noticing.",
+    "voice": "en-GB-RyanNeural",
+    "originalDuration": 2.856,
+    "tempo": 1
+  },
+  {
+    "start": 15.2,
+    "window": 6.5,
+    "text": "Now everything runs beautifully. Sorted. Dispatched. Right on schedule.",
+    "voice": "en-GB-RyanNeural",
+    "originalDuration": 7.248,
+    "tempo": 1.115076923076923
+  },
+  {
+    "start": 23.4,
+    "window": 2.2,
+    "text": "Delivery successful!",
+    "voice": "en-GB-SoniaNeural",
+    "originalDuration": 1.872,
+    "tempo": 1
+  },
+  {
+    "start": 27.8,
+    "window": 7.0,
+    "text": "The delivery was confirmed. The address was still wrong. What happens when an interface makes the same mistake?",
+    "voice": "en-GB-RyanNeural",
+    "originalDuration": 7.896,
+    "tempo": 1.128
+  },
+  {
+    "start": 13.3,
+    "window": 1.3,
+    "text": "Confirmed!",
+    "voice": "en-GB-SoniaNeural",
+    "originalDuration": 1.872,
+    "tempo": 1.44
+  }
+]

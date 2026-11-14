@@ -6,15 +6,22 @@ Revised HCI Tool Talk: chat-style onboarding versus a traditional form.
 
 ## Watch
 
-- [MP4 video](C-10-TeamGARI.mp4)
-- [English captions (SRT)](C-10-TeamGARI.srt)
-- [English captions (WebVTT)](C-10-TeamGARI.vtt)
-- [Viewing page](index.html)
+- [Full final video — 7:57.6](C-10-TeamGARI_Final.mp4)
+- [Birthday-cake opening — 35 seconds](C-10-TeamGARI_Birthday-Opening.mp4)
+- [English captions (SRT)](C-10-TeamGARI_Final.srt)
+- [English captions (WebVTT)](C-10-TeamGARI_Final.vtt)
+- [Earlier version viewing page](index.html)
 - [Original interactive prototype](prototype.html)
 
-The viewing page includes chapter navigation and a direct MP4 download.
+The direct downloads above are the latest film. The earlier viewing page retains the preceding version.
 
-## Revision 2
+## Latest opening
+
+The full film now begins with the approved dark editorial birthday-cake analogy: a cake for Maya at 14 Maple Street is packed, misrecorded as 14 Beacon Point, confirmed and efficiently delivered to a lighthouse. A miniature coastal town and the empty birthday cake stand make the wrong destination visible. Custom Cycles 3D assets, frosted glass overlays, independently moving lid and van, depth-based camera motion, introductory synthetic narration and original sound design.
+
+The 35-second opening replaces the former 18 seconds. All 13,278 presentation video frames after that cut are copied without re-encoding. The team narration follows on a sample-aligned continuous audio track. [Production source and reproduction instructions](production/editorial-opening/README.md) · [Verification](C-10-TeamGARI_Final-verification.json).
+
+## Earlier revisions
 
 - Presentation slides rebuilt as actual Blender geometry: raised text, floating cards, a thick layered stage and cast shadows.
 - Scenario footage remains the original flat recording, unchanged from the preceding cut.
@@ -23,7 +30,7 @@ The viewing page includes chapter navigation and a direct MP4 download.
 
 ## Sequence
 
-1. A newly rendered 3D parcel sorter routes a wrongly labelled package to the wrong destination. Synthetic AI narration is used only here.
+1. The editorial birthday-cake opening: an incorrect address is confirmed, sending the cake to a lighthouse. Synthetic narration is used only here.
 2. Muhammad Immad: introduction and simulation disclosure.
 3. Raj Lakhani: clear input, messy input and form recovery, using the original scenario recordings, retimed to the commentary.
 4. Awais Basheer: measurements and research context.

@@ -1,13 +1,24 @@
 {
   "file": "C-10-TeamGARI_Final.mp4",
-  "bytes": 69301990,
-  "sha256": "9df9c5343fd87b7d603ba99e896689d8bcdca0603a2d9b8b5d3e48886a412d4e",
-  "durationSeconds": 460.6,
+  "durationSeconds": 477.6,
   "width": 3840,
   "height": 1920,
   "fps": "30/1",
-  "frames": 13818,
-  "audio": "aac",
+  "frames": 14328,
+  "openingSeconds": 35,
+  "originalOpeningSeconds": 18,
+  "approvedBodyFrames": 13278,
+  "approvedBodyVideoBitstreamPreserved": true,
+  "bodyVideoVclHash": "SHA256=353b1fc20f991dacd4670041fb9fa47d3f65b7188c02a253a0536e308db87546",
   "fullDecode": "passed",
-  "audioBitstreamPreserved": true
+  "bytes": 73423699,
+  "sha256": "04933f2fbe2cd7ac4ea7161f6d08869cdde47d2d7c18e65d4371a06e9fb40592",
+  "openingNativeRender": [
+    1920,
+    960
+  ],
+  "openingStyle": "Approved dark editorial 2.5D; custom Cycles 3D assets, separate moving lid and van, depth-driven camera motion",
+  "syntheticVoice": "Opening narrator and confirmation system only",
+  "originalNarrationPcmPreserved": true,
+  "narrationBodyPcmSha256": "38ccb574d802722be7cf96c38f4a4a1e67569aa2e65fe145ecd0de153c9bc10e"
 }
