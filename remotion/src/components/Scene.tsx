@@ -23,7 +23,7 @@ export const Scene:React.FC<{manifest:Manifest;section:Section;globalFrame:numbe
  const local=globalFrame-section.startFrame;const length=section.endFrame-section.startFrame;const beat=beatAt(STORYBOARD[section.id],local);const phase=local-beat.start;const camera=cameraAt(beat,local,length);const id=speakerId(section.id),voice=voiceAt(section,globalFrame),accent=SPEAKERS[id].accent;const isDemo=beat.kind==='demo';
  const sidebarX=isDemo&&camera.target[0]>100?3240:180;
  const contentOpacity=clamp(local/12)*clamp((length-local)/12);
- return <AbsoluteFill style={{fontFamily:'Inter,sans-serif',overflow:'hidden'}}>
+ return <AbsoluteFill style={{fontFamily:'Inter,sans-serif',color:'#f4f1eb',overflow:'hidden'}}>
   <Background camera={camera} demo={isDemo}/>
   <div style={{position:'absolute',left:180,right:180,top:90,display:'flex',justifyContent:'space-between',fontSize:29,fontWeight:550,letterSpacing:'.1em',color:'#b9bec8',zIndex:40000}}><span>teamGARI <span style={{color:accent}}>/ C-10</span></span><span>{section.title.toUpperCase()}</span></div>
   <AbsoluteFill style={{opacity:contentOpacity}}>
