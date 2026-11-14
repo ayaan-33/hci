@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Planner profile: form vs chat (simulation)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2f4;--sf:#fff;--ink:#14232b;--mut:#4a5d68;--ac:#0f766e;--acInk:#fff;--wn:#9a4a07;--bd:#b9c8d1;--me:#d9eeea;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a20;--sf:#17262e;--ink:#e6eef2;--mut:#a7bac5;--ac:#5eead4;--acInk:#06201c;--wn:#fbbf24;--bd:#34495a;--me:#1d3b3a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1a20;--sf:#17262e;--ink:#e6eef2;--mut:#a7bac5;--ac:#5eead4;--acInk:#06201c;--wn:#fbbf24;--bd:#34495a;--me:#1d3b3a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.5 "Atkinson Hyperlegible",system-ui,Arial,sans-serif}
+*,*::before,*::after{box-sizing:inherit}
+:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+header,main{max-width:1180px;margin:0 auto;padding:16px 20px}
+h1{font-size:26px;margin:8px 0}
+.note{background:var(--sf);border-left:5px solid var(--wn);padding:10px 14px;margin:0;font-size:16px;color:var(--mut)}
+details{margin-top:10px;font-size:16px}
+main{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:20px}
+.pane{background:var(--sf);border:1px solid var(--bd);border-radius:8px;padding:20px;min-width:0}
+.pane h2{margin:0 0 4px;font-size:22px}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:10px;color:var(--mut);font-size:16px;margin-bottom:12px}
+label,legend{display:block;font-weight:700;margin:12px 0 4px}
+select,input[type=date],input[type=text]{width:100%;font:inherit;padding:10px;border:2px solid var(--bd);border-radius:6px;background:var(--sf);color:var(--ink)}
+fieldset{border:1px solid var(--bd);border-radius:6px;margin:12px 0}
+.days label{display:inline-flex;align-items:center;gap:6px;font-weight:400;margin:4px 12px 4px 0}
+button{font:inherit;font-weight:700;padding:10px 16px;border-radius:6px;border:2px solid var(--ac);background:var(--ac);color:var(--acInk);cursor:pointer}
+button.ghost{background:transparent;color:var(--ink);border-color:var(--bd)}
+.err{border:2px solid var(--wn);padding:10px 14px;border-radius:6px;margin:12px 0}
+.err:empty{display:none}
+.err a{color:inherit}
+[aria-invalid=true]{border-color:var(--wn)}
+.ok{margin-top:12px;font-weight:700}
+#log{height:300px;overflow:auto;border:1px solid var(--bd);border-radius:6px;padding:10px;display:flex;flex-direction:column;gap:8px}
+.m{max-width:88%;padding:8px 12px;border-radius:8px;border:1px solid var(--bd)}
+.m.me{align-self:flex-end;background:var(--me)}
+dl{margin:8px 0;display:grid;grid-template-columns:auto 1fr;gap:2px 12px}dt{font-weight:700}dd{margin:0}
+.row{display:flex;gap:8px;margin-top:10px}.row input{flex:1}
+.sc{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.sc button{font-size:15px;padding:6px 10px}
+</style>
+</head>
+<body>
+<header>
+<h1>Study-planner profile: form vs chat</h1>
+<p class="note"><b>Simulation for a class demo (AHCI Tool Talk).</b> The chat is a scripted rule-based parser, not a real language model. Its mistakes are written in on purpose to illustrate failure modes reported in research; they are not measured model behaviour. Use fake data only.</p>
+<details><summary>Scenario scripts</summary>
+<p><b>Scenario 1 (clear):</b> Two exams next week, CS3014 and MT1003. You work Tuesday and Thursday evenings.</p>
+<p><b>Scenario 2 (failure):</b> Exams are after the break. Your course is CS3014, but you mistype it as CS 3041. You work Mondays.</p>
+</details>
+</header>
+<main>
+<section class="pane" aria-labelledby="fh">
+<h2 id="fh">Version A: form</h2>
+<div class="bar"><span>Timer starts at your first input</span><span><output id="fTime" aria-hidden="true">0.0 s</output> <button class="ghost" type="button" id="fReset">Reset</button></span></div>
+<form id="form" novalidate>
+<div id="fErr" class="err" role="alert" tabindex="-1"></div>
+<label for="c1">Exam 1: course</label>
+<select id="c1"><option value="">Choose a course</option><option>CS3014 Applied HCI</option><option>CS2001 Data Structures</option><option>MT1003 Calculus II</option><option>EE1005 Digital Logic</option></select>
+<label for="d1">Exam 1: date</label><input type="date" id="d1">
+<label for="c2">Exam 2: course (optional)</label>
+<select id="c2"><option value="">Choose a course</option><option>CS3014 Applied HCI</option><option>CS2001 Data Structures</option><option>MT1003 Calculus II</option><option>EE1005 Digital Logic</option></select>
+<label for="d2">Exam 2: date</label><input type="date" id="d2">
+<fieldset class="days"><legend>Evenings you work</legend>
+<label><input type="checkbox" name="wd" value="Monday">Mon</label><label><input type="checkbox" name="wd" value="Tuesday">Tue</label><label><input type="checkbox" name="wd" value="Wednesday">Wed</label><label><input type="checkbox" name="wd" value="Thursday">Thu</label><label><input type="checkbox" name="wd" value="Friday">Fri</label><label><input type="checkbox" name="wd" value="Saturday">Sat</label><label><input type="checkbox" name="wd" value="Sunday">Sun</label>
+</fieldset>
+<button type="submit">Save profile</button>
+<p id="fOut" class="ok" role="status"></p>
+</form>
+</section>
+<section class="pane" aria-labelledby="ch">
+<h2 id="ch">Version B: chat (scripted)</h2>
+<div class="bar"><span>Timer starts when you send</span><span><output id="cTime" aria-hidden="true">0.0 s</output> <button class="ghost" type="button" id="cReset">Reset</button></span></div>
+<div id="log" role="log" aria-label="Conversation"></div>
+<form id="chat" class="row">
+<label for="msg" style="position:absolute;left:-9999px">Your message</label>
+<input type="text" id="msg" autocomplete="off" placeholder="Type your message">
+<button type="submit">Send</button>
+</form>
+<div class="sc"><button class="ghost" type="button" id="s1">Insert scenario 1 text</button><button class="ghost" type="button" id="s2">Insert scenario 2 text</button></div>
+</section>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+const fmt=d=>d.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
+function timer(id){const el=$(id);let t0=null,iv=null,done=false;return{
+start(){if(t0||done)return;t0=Date.now();iv=setInterval(()=>el.textContent=((Date.now()-t0)/1000).toFixed(1)+' s',100)},
+stop(){if(!t0||done)return;clearInterval(iv);done=true;el.textContent=((Date.now()-t0)/1000).toFixed(1)+' s (stopped)'},
+reset(){clearInterval(iv);t0=null;done=false;el.textContent='0.0 s'}}}
+const fT=timer('#fTime'),cT=timer('#cTime');
+
+/* Form */
+const form=$('#form');
+form.addEventListener('input',()=>fT.start());
+form.addEventListener('submit',e=>{
+ e.preventDefault();$('#fOut').textContent='';
+ const E=[],g=i=>$('#'+i);
+ [...form.querySelectorAll('[aria-invalid]')].forEach(x=>x.removeAttribute('aria-invalid'));
+ if(!g('c1').value)E.push(['c1','Choose a course for exam 1']);
+ if(!g('d1').value)E.push(['d1','Enter a date for exam 1']);
+ if(g('c2').value&&!g('d2').value)E.push(['d2','Enter a date for exam 2']);
+ if(g('d2').value&&!g('c2').value)E.push(['c2','Choose a course for exam 2']);
+ const days=[...form.querySelectorAll('[name=wd]:checked')].map(x=>x.value);
+ if(!days.length)E.push(['wd','Select at least one evening you work']);
+ const box=$('#fErr');
+ if(E.length){
+  box.innerHTML='<b>Fix '+E.length+' problem'+(E.length>1?'s':'')+':</b><ul>'+E.map(x=>'<li><a href="#'+x[0]+'">'+x[1]+'</a></li>').join('')+'</ul>';
+  E.forEach(x=>{const f=g(x[0])||form.querySelector('[name=wd]');f.setAttribute('aria-invalid','true')});
+  box.focus();return;
+ }
+ box.innerHTML='';
+ const ex=[g('c1').value.split(' ')[0]+' on '+g('d1').value];
+ if(g('c2').value)ex.push(g('c2').value.split(' ')[0]+' on '+g('d2').value);
+ $('#fOut').textContent='Profile saved. Exams: '+ex.join(', ')+'. Work evenings: '+days.join(', ')+'.';
+ fT.stop();
+});
+form.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(a){e.preventDefault();const t=document.getElementById(a.getAttribute('href').slice(1))||form.querySelector('[name=wd]');t.focus()}});
+$('#fReset').onclick=()=>{form.reset();$('#fErr').innerHTML='';$('#fOut').textContent='';[...form.querySelectorAll('[aria-invalid]')].forEach(x=>x.removeAttribute('aria-invalid'));fT.reset()};
+
+/* Scripted chat: rule-based, not an LLM */
+const DAYS={mon:'Monday',tue:'Tuesday',wed:'Wednesday',thu:'Thursday',fri:'Friday',sat:'Saturday',sun:'Sunday'};
+const DAYRE=/\b(mon|tue|wed|thu|fri|sat|sun)(?:day|sday|nesday|rsday|urday)?s?\b/gi;
+const log=$('#log');let st={};
+function nextMon(){const d=new Date();d.setDate(d.getDate()+((8-d.getDay())%7||7));return d}
+function addText(who,t){const d=document.createElement('div');d.className='m '+who;d.textContent=t;log.appendChild(d);log.scrollTop=log.scrollHeight}
+function addHTML(h){const d=document.createElement('div');d.className='m bot';d.innerHTML=h;log.appendChild(d);log.scrollTop=log.scrollHeight}
+function parse(t){const o={};
+ const cs=[...t.matchAll(/\b([A-Za-z]{2})[\s-]?(\d{4})\b/g)].map(m=>m[1].toUpperCase()+m[2]);
+ if(cs.length)o.courses=[...new Set(cs)];
+ if(/after the break/i.test(t))o.timing='22 Nov 2026';
+ else if(/next week/i.test(t))o.timing='Week of '+fmt(nextMon());
+ const ds=[...t.matchAll(DAYRE)].map(m=>DAYS[m[1].toLowerCase()]);
+ if(ds.length)o.days=[...new Set(ds)];
+ return o}
+function reply(){
+ if(!st.courses)return addHTML('Which courses are your exams in?');
+ if(!st.timing)return addHTML('When are your exams?');
+ if(!st.days)return addHTML('Which evenings do you work?');
+ addHTML('<p style="margin:0">Here’s what I understood:</p><dl><dt>Courses</dt><dd>'+st.courses.join(', ')+'</dd><dt>Exams</dt><dd>'+st.timing+'</dd><dt>Work evenings</dt><dd>'+st.days.join(', ')+'</dd></dl><button type="button" data-a="ok">Confirm</button> <button type="button" class="ghost" data-a="fix">Correct something</button>');
+}
+function hello(){addHTML('Hi! Tell me about your exams and when you work, and I’ll set up your planner profile.')}
+$('#chat').addEventListener('submit',e=>{
+ e.preventDefault();const i=$('#msg'),t=i.value.trim();if(!t)return;
+ cT.start();addText('me',t);i.value='';
+ setTimeout(()=>{Object.assign(st,parse(t));reply()},450);
+});
+log.addEventListener('click',e=>{const b=e.target.closest('button[data-a]');if(!b)return;
+ if(b.dataset.a==='ok'){cT.stop();addHTML('Profile saved.')}
+ else{addHTML('What should I change? For example: “My course is CS3014”.');$('#msg').focus()}
+});
+const setMsg=t=>{$('#msg').value=t;$('#msg').focus()};
+$('#s1').onclick=()=>setMsg('I have two exams next week for CS3014 and MT1003, and I work Tuesday and Thursday evenings.');
+$('#s2').onclick=()=>setMsg('Exams are after the break, I’m in CS 3041, and I work Mondays.');
+$('#cReset').onclick=()=>{log.innerHTML='';st={};cT.reset();hello()};
+hello();
+</script>
+</body>
+</html>

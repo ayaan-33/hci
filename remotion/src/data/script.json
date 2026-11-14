@@ -1,0 +1,752 @@
+[
+  {
+    "id": "Immad-01",
+    "speaker": "Muhammad Immad",
+    "title": "The question",
+    "script": "A conversation can feel successful even when the information is wrong. That is the question behind our project: when collecting structured information, when does chat help, and when is a traditional form a better choice?\nWe are Team C-10, teamGARI: Raja Suleman, Raj Lakhani, Awais Basheer, and Muhammad Immad.\nOur task is setting up a study-planner profile with courses, exam dates, and work evenings. We compare the two interfaces through three questions: how long does the interaction take, what information gets confirmed, and how easily can the user check and correct it?",
+    "samples": 1936320,
+    "durationSeconds": 40.34,
+    "captions": [
+      {
+        "start": 1.16,
+        "end": 4.98,
+        "text": "A conversation can feel successful even when the information"
+      },
+      {
+        "start": 4.98,
+        "end": 7.64,
+        "text": "is wrong. That is the question behind our project:"
+      },
+      {
+        "start": 8.04,
+        "end": 11.84,
+        "text": "when collecting structured information, when does chat help, and"
+      },
+      {
+        "start": 11.84,
+        "end": 14.66,
+        "text": "when is a traditional form a better choice?"
+      },
+      {
+        "start": 15.14,
+        "end": 19.865,
+        "text": "We are Team C-10, teamGARI: Raja Suleman, Raj Lakhani,"
+      },
+      {
+        "start": 19.865,
+        "end": 22.9667,
+        "text": "Awais Basheer, and Muhammad Immad."
+      },
+      {
+        "start": 22.9667,
+        "end": 26.04,
+        "text": "Our task is setting up a study-planner profile with"
+      },
+      {
+        "start": 26.04,
+        "end": 28.52,
+        "text": "courses, exam dates, and work evenings."
+      },
+      {
+        "start": 28.52,
+        "end": 32.58,
+        "text": "We compare the two interfaces through three questions: how"
+      },
+      {
+        "start": 32.58,
+        "end": 35.7,
+        "text": "long does the interaction take, what information gets confirmed,"
+      },
+      {
+        "start": 35.7,
+        "end": 39.68,
+        "text": "and how easily can the user check and correct"
+      },
+      {
+        "start": 39.68,
+        "end": 40.06,
+        "text": "it?"
+      }
+    ]
+  },
+  {
+    "id": "Immad-02",
+    "speaker": "Muhammad Immad",
+    "title": "Before the demonstration",
+    "script": "Before the demonstration, one important distinction: our chat is a scripted simulation, not a live language model. Its mistakes were deliberately programmed to illustrate possible failure modes. Our results come from one team member\u2019s run, so they are illustrative, not a validated comparison.",
+    "samples": 912960,
+    "durationSeconds": 19.02,
+    "captions": [
+      {
+        "start": 0.76,
+        "end": 4.96,
+        "text": "Before the demonstration, one important distinction: our chat is"
+      },
+      {
+        "start": 4.96,
+        "end": 7.56,
+        "text": "a scripted simulation, not a live language model."
+      },
+      {
+        "start": 8.1,
+        "end": 11.7,
+        "text": "Its mistakes were deliberately programmed to illustrate possible failure"
+      },
+      {
+        "start": 11.7,
+        "end": 15.42,
+        "text": "modes. Our results come from one team member\u2019s run,"
+      },
+      {
+        "start": 15.25,
+        "end": 19.02,
+        "text": "so they are illustrative, not a validated comparison."
+      }
+    ]
+  },
+  {
+    "id": "Raj-01",
+    "speaker": "Raj Lakhani",
+    "title": "01 / Clear input",
+    "script": "Here are the two versions of our prototype: the form on the left and the scripted chat on the right.\nIn the first scenario, the student has two exams next week, for CS3014 and MT1003, and works Tuesday and Thursday evenings.\nIn chat, the message produces a summary showing the courses, the exam week, and the work evenings. The tester confirms it, and the displayed timer stops at 8.6 seconds.\nOn the form, the tester selects the courses, enters individual exam dates, and chooses the work evenings. The displayed timer stops at 12.5 seconds.\nBoth complete this scenario without the planted mistakes. However, the outputs differ in detail: chat records the week, while the form records exact dates. Keep that difference in mind when comparing them.",
+    "samples": 2425608,
+    "durationSeconds": 50.5335,
+    "captions": [
+      {
+        "start": 2.1,
+        "end": 4.54,
+        "text": "Here are the two versions of our prototype: the"
+      },
+      {
+        "start": 4.54,
+        "end": 6.32,
+        "text": "form on the left and the scripted chat on"
+      },
+      {
+        "start": 6.32,
+        "end": 9.38,
+        "text": "the right. In the first scenario, the student has"
+      },
+      {
+        "start": 9.38,
+        "end": 14.3,
+        "text": "two exams next week, for CS3014 and MT1003, and"
+      },
+      {
+        "start": 14.3,
+        "end": 16.52,
+        "text": "works Tuesday and Thursday evenings."
+      },
+      {
+        "start": 16.52,
+        "end": 20.06,
+        "text": "In chat, the message produces a summary showing the"
+      },
+      {
+        "start": 20.06,
+        "end": 23.02,
+        "text": "courses, the exam week, and the work evenings."
+      },
+      {
+        "start": 23.02,
+        "end": 25.82,
+        "text": "The tester confirms it, and the displayed timer stops"
+      },
+      {
+        "start": 25.82,
+        "end": 29.38,
+        "text": "at 8.6 seconds. On the form, the tester selects"
+      },
+      {
+        "start": 29.38,
+        "end": 33.26,
+        "text": "the courses, enters individual exam dates, and chooses the"
+      },
+      {
+        "start": 33.26,
+        "end": 37.12,
+        "text": "work evenings. The displayed timer stops at 12.5 seconds."
+      },
+      {
+        "start": 37.7,
+        "end": 41.08,
+        "text": "Both complete this scenario without the planted mistakes."
+      },
+      {
+        "start": 41.72,
+        "end": 44.96,
+        "text": "However, the outputs differ in detail: chat records the"
+      },
+      {
+        "start": 44.96,
+        "end": 47.24,
+        "text": "week, while the form records exact dates."
+      },
+      {
+        "start": 47.92,
+        "end": 50.38,
+        "text": "Keep that difference in mind when comparing them."
+      }
+    ]
+  },
+  {
+    "id": "Raj-02",
+    "speaker": "Raj Lakhani",
+    "title": "02 / Messy input",
+    "script": "Now the input is less precise: \u201cExams are after the break, I\u2019m in CS 3041, and I work Mondays.\u201d\nThere is no exact exam date. The course code is also mistyped: the intended code is CS3014.\nWatch the chat summary. It supplies the twenty-second of November, even though the message never gave that date. It also carries the incorrect course code into the summary.\nThe tester highlights the date, but still selects Confirm. The interface displays \u201cProfile saved,\u201d with both incorrect values accepted.\nThis is a programmed demonstration of the failure, not an observed language-model prediction. The design question it illustrates is still useful: does a confirmation button help if the user misses what needs correcting?",
+    "samples": 2155848,
+    "durationSeconds": 44.9135,
+    "captions": [
+      {
+        "start": 0,
+        "end": 3.08,
+        "text": "Now the input is less precise: \u201cExams are after"
+      },
+      {
+        "start": 3.08,
+        "end": 5.56,
+        "text": "the break, I\u2019m in CS 3041, and I work"
+      },
+      {
+        "start": 5.91,
+        "end": 7.74,
+        "text": "Mondays.\u201d There is no exact exam date."
+      },
+      {
+        "start": 8.46,
+        "end": 11.32,
+        "text": "The course code is also mistyped: the intended code"
+      },
+      {
+        "start": 11.32,
+        "end": 14.16,
+        "text": "is CS3014. Watch the chat summary."
+      },
+      {
+        "start": 14.6,
+        "end": 17.2,
+        "text": "It supplies the twenty-second of November, even though the"
+      },
+      {
+        "start": 17.2,
+        "end": 19.3,
+        "text": "message never gave that date."
+      },
+      {
+        "start": 19.94,
+        "end": 22.28,
+        "text": "It also carries the incorrect course code into the"
+      },
+      {
+        "start": 22.28,
+        "end": 25.6,
+        "text": "summary. The tester highlights the date, but still selects"
+      },
+      {
+        "start": 25.6,
+        "end": 29.62,
+        "text": "Confirm. The interface displays \u201cProfile saved,\u201d with both incorrect"
+      },
+      {
+        "start": 29.62,
+        "end": 32.86,
+        "text": "values accepted. This is a programmed demonstration of the"
+      },
+      {
+        "start": 32.86,
+        "end": 36.5,
+        "text": "failure, not an observed language-model prediction."
+      },
+      {
+        "start": 36.5,
+        "end": 40.66,
+        "text": "The design question it illustrates is still useful: does"
+      },
+      {
+        "start": 40.66,
+        "end": 43.8,
+        "text": "a confirmation button help if the user misses what"
+      },
+      {
+        "start": 43.6,
+        "end": 44.38,
+        "text": "needs correcting?"
+      }
+    ]
+  },
+  {
+    "id": "Raj-03",
+    "speaker": "Raj Lakhani",
+    "title": "03 / Form recovery",
+    "script": "On the form, the tester leaves the required exam date and work evenings blank, then tries to save.\nAn error summary identifies the two missing entries. The tester supplies the date, selects Monday, and saves successfully. The displayed timer stops at 18.7 seconds.\nThe form catches missing required information in this run. That does not mean it can detect every wrong answer. The contrast is that this form demands an explicit value, while our scripted chat substitutes a date and accepts the typo.",
+    "samples": 1478088,
+    "durationSeconds": 30.7935,
+    "captions": [
+      {
+        "start": 0,
+        "end": 3.52,
+        "text": "On the form, the tester leaves the required exam"
+      },
+      {
+        "start": 3.52,
+        "end": 7.18,
+        "text": "date and work evenings blank, then tries to save."
+      },
+      {
+        "start": 7.42,
+        "end": 9.78,
+        "text": "An error summary identifies the two missing entries."
+      },
+      {
+        "start": 10.42,
+        "end": 13.06,
+        "text": "The tester supplies the date, selects Monday, and saves"
+      },
+      {
+        "start": 13.06,
+        "end": 16.66,
+        "text": "successfully. The displayed timer stops at 18.7 seconds."
+      },
+      {
+        "start": 17.12,
+        "end": 20.8,
+        "text": "The form catches missing required information in this run."
+      },
+      {
+        "start": 20.8,
+        "end": 23.04,
+        "text": "That does not mean it can detect every wrong"
+      },
+      {
+        "start": 23.04,
+        "end": 26.12,
+        "text": "answer. The contrast is that this form demands an"
+      },
+      {
+        "start": 26.12,
+        "end": 29.32,
+        "text": "explicit value, while our scripted chat substitutes a date"
+      },
+      {
+        "start": 29.66,
+        "end": 30.52,
+        "text": "and accepts the typo."
+      }
+    ]
+  },
+  {
+    "id": "Awais-01",
+    "speaker": "Awais Basheer",
+    "title": "Reading the measurements",
+    "script": "What do these results actually tell us?\nFirst, time. The displayed chat times were 8.6 seconds in scenario one and 13 seconds in scenario two. The form times were 12.5 and 18.7 seconds.\nHowever, the timers start at different points. The form starts timing at the first input; chat starts when the message is sent, excluding message preparation. The interfaces also collect different levels of date detail. These are demonstration timings, not a controlled test proving that chat is faster.\nSecond, errors. In the messy scenario, the chat accepts two incorrect values, while the form blocks missing entries.\nThird, control. A summary gives users an opportunity to review, but simply showing information does not guarantee that mistakes will be noticed.",
+    "samples": 2622408,
+    "durationSeconds": 54.6335,
+    "captions": [
+      {
+        "start": 2.88,
+        "end": 4.74,
+        "text": "What do these results actually tell us?"
+      },
+      {
+        "start": 5.42,
+        "end": 9.06,
+        "text": "First, time. The displayed chat times were 8.6 seconds"
+      },
+      {
+        "start": 9.06,
+        "end": 12.78,
+        "text": "in scenario one and 13 seconds in scenario two."
+      },
+      {
+        "start": 12.78,
+        "end": 16.22,
+        "text": "The form times were 12.5 and 18.7 seconds."
+      },
+      {
+        "start": 16.66,
+        "end": 19.5,
+        "text": "However, the timers start at different points."
+      },
+      {
+        "start": 19.94,
+        "end": 23.34,
+        "text": "The form starts timing at the first input; chat"
+      },
+      {
+        "start": 23.34,
+        "end": 26.98,
+        "text": "starts when the message is sent, excluding message preparation."
+      },
+      {
+        "start": 26.98,
+        "end": 30.84,
+        "text": "The interfaces also collect different levels of date detail."
+      },
+      {
+        "start": 31.46,
+        "end": 34.96,
+        "text": "These are demonstration timings, not a controlled test proving"
+      },
+      {
+        "start": 34.96,
+        "end": 38.6,
+        "text": "that chat is faster. Second, errors."
+      },
+      {
+        "start": 39.16,
+        "end": 42.12,
+        "text": "In the messy scenario, the chat accepts two incorrect"
+      },
+      {
+        "start": 42.12,
+        "end": 45.24,
+        "text": "values, while the form blocks missing entries."
+      },
+      {
+        "start": 46.4,
+        "end": 49.74,
+        "text": "Third, control. A summary gives users an opportunity to"
+      },
+      {
+        "start": 49.74,
+        "end": 53.18,
+        "text": "review, but simply showing information does not guarantee that"
+      },
+      {
+        "start": 53.18,
+        "end": 54.22,
+        "text": "mistakes will be noticed."
+      }
+    ]
+  },
+  {
+    "id": "Awais-02",
+    "speaker": "Awais Basheer",
+    "title": "Research in context",
+    "script": "Our slides also bring in published research. The studies we cite report that a single-page form was fastest in one comparison, and that a chatbot took longer in another.\nThe cited work by Wei and colleagues examines how well a language-model chatbot collects target information, including the risk of leaving information out. That is a different measure from simply counting wrong values.\nThese studies use different tasks and systems, so their results should not be treated as one universal ranking.\nOur demonstration illustrates a design problem. It does not establish how often real chatbots fail, or overturn findings from larger studies.",
+    "samples": 1881288,
+    "durationSeconds": 39.1935,
+    "captions": [
+      {
+        "start": 2.62,
+        "end": 4.7,
+        "text": "Our slides also bring in published research."
+      },
+      {
+        "start": 5.28,
+        "end": 7.64,
+        "text": "The studies we cite report that a single-page form"
+      },
+      {
+        "start": 7.64,
+        "end": 10.82,
+        "text": "was fastest in one comparison, and that a chatbot"
+      },
+      {
+        "start": 10.82,
+        "end": 13.64,
+        "text": "took longer in another. The cited work by Wei"
+      },
+      {
+        "start": 13.64,
+        "end": 16.98,
+        "text": "and colleagues examines how well a language-model chatbot collects"
+      },
+      {
+        "start": 16.98,
+        "end": 20.6,
+        "text": "target information, including the risk of leaving information out."
+      },
+      {
+        "start": 20.82,
+        "end": 23.6,
+        "text": "That is a different measure from simply counting wrong"
+      },
+      {
+        "start": 23.6,
+        "end": 27.24,
+        "text": "values. These studies use different tasks and systems, so"
+      },
+      {
+        "start": 27.15,
+        "end": 29.84,
+        "text": "their results should not be treated as one universal"
+      },
+      {
+        "start": 29.84,
+        "end": 33.7,
+        "text": "ranking. Our demonstration illustrates a design problem."
+      },
+      {
+        "start": 34.04,
+        "end": 36.48,
+        "text": "It does not establish how often real chatbots fail,"
+      },
+      {
+        "start": 36.52,
+        "end": 38.92,
+        "text": "or overturn findings from larger studies."
+      }
+    ]
+  },
+  {
+    "id": "Raja-01",
+    "speaker": "Raja Suleman",
+    "title": "Limitations & accessibility",
+    "script": "There are important limits to our work. We built the prototype ourselves, tested it with one team member, and deliberately scripted the chat\u2019s mistakes. We cannot generalise these results to all users or to real language models.\nOur keyboard-only pass also found problems in both interfaces. In chat, reaching Confirm required moving through other controls because focus was not moved to the new summary.\nIn the form, we encountered difficulty dismissing the browser\u2019s date picker with the keyboard. That behaviour may depend on the browser and platform.\nThese observations show why accessibility needs its own evaluation. A visually clear interface is not enough.",
+    "samples": 2191368,
+    "durationSeconds": 45.6535,
+    "captions": [
+      {
+        "start": 0,
+        "end": 2.72,
+        "text": "There are important limits to our work."
+      },
+      {
+        "start": 2.9,
+        "end": 6.1,
+        "text": "We built the prototype ourselves, tested it with one"
+      },
+      {
+        "start": 6.1,
+        "end": 9.3,
+        "text": "team member, and deliberately scripted the chat\u2019s mistakes."
+      },
+      {
+        "start": 10.0,
+        "end": 13.6,
+        "text": "We cannot generalise these results to all users or"
+      },
+      {
+        "start": 13.6,
+        "end": 17.78,
+        "text": "to real language models. Our keyboard-only pass also found"
+      },
+      {
+        "start": 17.78,
+        "end": 23.2,
+        "text": "problems in both interfaces. In chat, reaching Confirm required"
+      },
+      {
+        "start": 23.2,
+        "end": 26.52,
+        "text": "moving through other controls because focus was not moved"
+      },
+      {
+        "start": 26.52,
+        "end": 29.5,
+        "text": "to the new summary. In the form, we encountered"
+      },
+      {
+        "start": 29.5,
+        "end": 33.38,
+        "text": "difficulty dismissing the browser\u2019s date picker with the keyboard."
+      },
+      {
+        "start": 33.9,
+        "end": 36.96,
+        "text": "That behaviour may depend on the browser and platform."
+      },
+      {
+        "start": 37.72,
+        "end": 42.12,
+        "text": "These observations show why accessibility needs its own evaluation."
+      },
+      {
+        "start": 43.02,
+        "end": 45.42,
+        "text": "A visually clear interface is not enough."
+      }
+    ]
+  },
+  {
+    "id": "Raja-02",
+    "speaker": "Raja Suleman",
+    "title": "Screen readers, claims & privacy",
+    "script": "We did not test with a screen reader. The prototype includes a conversation log role, but that alone does not verify that new replies are announced correctly. We would need to test announcements, focus order, and correction controls with assistive technology.\nWe also distinguish research evidence from marketing. The Typeform completion claim discussed in our slides is a secondhand vendor claim about conversational forms, not evidence that language-model chat is better. We did not test it.\nFinally, free text can invite people to share more information than necessary. If a future version sends messages to an external service, that creates additional privacy considerations. Our demonstration uses fake data and a local scripted parser.",
+    "samples": 2341128,
+    "durationSeconds": 48.7735,
+    "captions": [
+      {
+        "start": 0,
+        "end": 2.46,
+        "text": "We did not test with a screen reader."
+      },
+      {
+        "start": 2.46,
+        "end": 6.3,
+        "text": "The prototype includes a conversation log role, but that"
+      },
+      {
+        "start": 6.3,
+        "end": 9.1,
+        "text": "alone does not verify that new replies are announced"
+      },
+      {
+        "start": 9.1,
+        "end": 12.44,
+        "text": "correctly. We would need to test announcements, focus order,"
+      },
+      {
+        "start": 12.44,
+        "end": 15.0,
+        "text": "and correction controls with assistive technology."
+      },
+      {
+        "start": 15.96,
+        "end": 18.62,
+        "text": "We also distinguish research evidence from marketing."
+      },
+      {
+        "start": 19.4,
+        "end": 22.7,
+        "text": "The Typeform completion claim discussed in our slides is"
+      },
+      {
+        "start": 22.69,
+        "end": 26.68,
+        "text": "a secondhand vendor claim about conversational forms, not evidence"
+      },
+      {
+        "start": 26.68,
+        "end": 28.62,
+        "text": "that language-model chat is better."
+      },
+      {
+        "start": 28.62,
+        "end": 30.56,
+        "text": "We did not test it."
+      },
+      {
+        "start": 30.98,
+        "end": 34.14,
+        "text": "Finally, free text can invite people to share more"
+      },
+      {
+        "start": 34.14,
+        "end": 37.76,
+        "text": "information than necessary. If a future version sends messages"
+      },
+      {
+        "start": 37.76,
+        "end": 42.06,
+        "text": "to an external service, that creates additional privacy considerations."
+      },
+      {
+        "start": 42.8,
+        "end": 47.24,
+        "text": "Our demonstration uses fake data and a local scripted"
+      },
+      {
+        "start": 47.7668,
+        "end": 48.7735,
+        "text": "parser."
+      }
+    ]
+  },
+  {
+    "id": "Immad-03",
+    "speaker": "Muhammad Immad",
+    "title": "A proposed way forward",
+    "script": "Our recommendation is to start with the information the task requires. When the fields are known and correctness matters, a form makes those requirements visible. Chat can help people express messy or narrative information, but uncertainty needs to stay visible, and corrections need to be easy.\nFor this task, we propose a hybrid: let free text pre-fill a form, then let the user inspect and edit the fields before confirming. Ask for missing dates instead of guessing them, and flag an unrecognised course code. This is our proposed improvement, not a feature we tested.\nFor our project, this informs the D3 and D4 input-flow design and the D5 accessibility evaluation. Next, we would test with real users, use consistent timing rules, check screen-reader behaviour, and measure errors across repeated runs.\nThe key question is not just whether the interaction feels natural. It is whether people can understand and control what the system records. Thank you for watching.",
+    "samples": 2915520,
+    "durationSeconds": 60.74,
+    "captions": [
+      {
+        "start": 0.98,
+        "end": 4.26,
+        "text": "Our recommendation is to start with the information the"
+      },
+      {
+        "start": 4.26,
+        "end": 7.26,
+        "text": "task requires. When the fields are known and correctness"
+      },
+      {
+        "start": 7.26,
+        "end": 10.68,
+        "text": "matters, a form makes those requirements visible."
+      },
+      {
+        "start": 10.76,
+        "end": 13.66,
+        "text": "Chat can help people express messy or narrative information,"
+      },
+      {
+        "start": 14.1,
+        "end": 17.74,
+        "text": "but uncertainty needs to stay visible, and corrections need"
+      },
+      {
+        "start": 17.74,
+        "end": 21.26,
+        "text": "to be easy. For this task, we propose a"
+      },
+      {
+        "start": 21.26,
+        "end": 25.0,
+        "text": "hybrid: let free text pre-fill a form, then let"
+      },
+      {
+        "start": 25.0,
+        "end": 27.54,
+        "text": "the user inspect and edit the fields before confirming."
+      },
+      {
+        "start": 27.54,
+        "end": 30.56,
+        "text": "Ask for missing dates instead of guessing them, and"
+      },
+      {
+        "start": 30.56,
+        "end": 33.56,
+        "text": "flag an unrecognised course code."
+      },
+      {
+        "start": 34.02,
+        "end": 36.46,
+        "text": "This is our proposed improvement, not a feature we"
+      },
+      {
+        "start": 36.46,
+        "end": 39.78,
+        "text": "tested. For our project, this informs the D3 and"
+      },
+      {
+        "start": 39.78,
+        "end": 43.08,
+        "text": "D4 input-flow design and the D5 accessibility evaluation."
+      },
+      {
+        "start": 43.78,
+        "end": 46.64,
+        "text": "Next, we would test with real users, use consistent"
+      },
+      {
+        "start": 46.64,
+        "end": 50.4,
+        "text": "timing rules, check screen-reader behaviour, and measure errors across"
+      },
+      {
+        "start": 50.4,
+        "end": 53.04,
+        "text": "repeated runs. The key question is not just whether"
+      },
+      {
+        "start": 53.04,
+        "end": 56.3,
+        "text": "the interaction feels natural. It is whether people can"
+      },
+      {
+        "start": 56.3,
+        "end": 59.0,
+        "text": "understand and control what the system records."
+      },
+      {
+        "start": 59.4,
+        "end": 60.16,
+        "text": "Thank you for watching."
+      }
+    ]
+  }
+]

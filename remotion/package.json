@@ -1,0 +1,18 @@
+{
+  "name": "teamgari-editorial-film",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sample-aligned 18:9 HCI film with deterministic 2.5D choreography and offline voice analysis",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "validate": "node scripts/validate-assets.mjs",
+    "render:preview": "node scripts/render.mjs --quality preview",
+    "render:final": "node scripts/render.mjs --quality final",
+    "render:proof": "node scripts/render.mjs --quality preview --composition Proof",
+    "still:hero": "remotion still src/index.ts Film out/hero.png --frame=630 --scale=0.5"
+  },
+  "dependencies": {"remotion":"4.0.543","@remotion/cli":"4.0.543","@remotion/bundler":"4.0.543","@remotion/renderer":"4.0.543","react":"19.3.1","react-dom":"19.3.1"},
+  "devDependencies": {"typescript":"5.9.3","tsx":"4.21.0","@types/react":"19.2.7","@types/react-dom":"19.2.3","@types/node":"24.10.1"}
+}

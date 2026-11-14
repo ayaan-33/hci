@@ -1,0 +1,109 @@
+{
+  "Raj-01": {
+    "source": "scenario-1.mov",
+    "frames": 1516,
+    "pieces": [
+      {
+        "from": 0,
+        "to": 216,
+        "holdFrame": 0
+      },
+      {
+        "from": 216,
+        "to": 496,
+        "sourceStart": 0,
+        "sourceEnd": 6
+      },
+      {
+        "from": 496,
+        "to": 707,
+        "sourceStart": 6,
+        "sourceEnd": 13.4
+      },
+      {
+        "from": 707,
+        "to": 838,
+        "holdFrame": 373
+      },
+      {
+        "from": 838,
+        "to": 1079,
+        "sourceStart": 14,
+        "sourceEnd": 28.216667
+      },
+      {
+        "from": 1079,
+        "to": 1516,
+        "holdFrame": 1050
+      }
+    ]
+  },
+  "Raj-02": {
+    "source": "scenario-2.mov",
+    "frames": 1347,
+    "pieces": [
+      {
+        "from": 0,
+        "to": 194,
+        "sourceStart": 0,
+        "sourceEnd": 2.9
+      },
+      {
+        "from": 194,
+        "to": 395,
+        "holdTime": 2.9
+      },
+      {
+        "from": 395,
+        "to": 692,
+        "sourceStart": 2.9,
+        "sourceEnd": 14.9
+      },
+      {
+        "from": 692,
+        "to": 768,
+        "sourceStart": 14.9,
+        "sourceEnd": 16.316667
+      },
+      {
+        "from": 768,
+        "to": 1347,
+        "holdFrame": 687
+      }
+    ]
+  },
+  "Raj-03": {
+    "source": "scenario-2.mov",
+    "frames": 924,
+    "pieces": [
+      {
+        "from": 0,
+        "to": 223,
+        "sourceStart": 22,
+        "sourceEnd": 30.945
+      },
+      {
+        "from": 223,
+        "to": 315,
+        "holdFrame": 1164
+      },
+      {
+        "from": 315,
+        "to": 360,
+        "sourceStart": 40,
+        "sourceEnd": 42.125
+      },
+      {
+        "from": 360,
+        "to": 392,
+        "sourceStart": 42.125,
+        "sourceEnd": 46.491667
+      },
+      {
+        "from": 392,
+        "to": 924,
+        "holdFrame": 1856
+      }
+    ]
+  }
+}

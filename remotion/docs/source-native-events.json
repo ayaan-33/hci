@@ -1,0 +1,148 @@
+[
+  {
+    "scenario": 1,
+    "event": "chat_saved",
+    "last_absent_pts": 13.366666666666667,
+    "first_present_pts": 13.4,
+    "tested_grid_fps": 30,
+    "native_candidates": [
+      {
+        "frame": 371,
+        "pts": 13.366667
+      },
+      {
+        "frame": 372,
+        "pts": 13.383333
+      },
+      {
+        "frame": 373,
+        "pts": 13.4
+      }
+    ],
+    "native_first_visible_in_bracket": {
+      "frame": 373,
+      "pts": 13.4
+    }
+  },
+  {
+    "scenario": 1,
+    "event": "form_saved",
+    "last_absent_pts": 28.1,
+    "first_present_pts": 28.133333333333333,
+    "tested_grid_fps": 30,
+    "native_candidates": [
+      {
+        "frame": 1049,
+        "pts": 28.108333
+      },
+      {
+        "frame": 1050,
+        "pts": 28.216667
+      }
+    ],
+    "native_first_visible_in_bracket": {
+      "frame": 1050,
+      "pts": 28.216667
+    }
+  },
+  {
+    "scenario": 2,
+    "event": "chat_saved",
+    "last_absent_pts": 16.3,
+    "first_present_pts": 16.333333333333332,
+    "tested_grid_fps": 30,
+    "native_candidates": [
+      {
+        "frame": 686,
+        "pts": 16.3
+      },
+      {
+        "frame": 687,
+        "pts": 16.316667
+      },
+      {
+        "frame": 688,
+        "pts": 16.341667
+      }
+    ],
+    "native_first_visible_in_bracket": {
+      "frame": 687,
+      "pts": 16.316667
+    }
+  },
+  {
+    "scenario": 2,
+    "event": "two_errors",
+    "last_absent_pts": 30.9,
+    "first_present_pts": 30.933333333333334,
+    "tested_grid_fps": 30,
+    "native_candidates": [
+      {
+        "frame": 1163,
+        "pts": 30.903333
+      },
+      {
+        "frame": 1164,
+        "pts": 30.945
+      }
+    ],
+    "native_first_visible_in_bracket": {
+      "frame": 1164,
+      "pts": 30.945
+    }
+  },
+  {
+    "scenario": 2,
+    "event": "one_error",
+    "last_absent_pts": 42.1,
+    "first_present_pts": 42.13333333333333,
+    "tested_grid_fps": 30,
+    "native_candidates": [
+      {
+        "frame": 1651,
+        "pts": 42.108333
+      },
+      {
+        "frame": 1652,
+        "pts": 42.125
+      },
+      {
+        "frame": 1653,
+        "pts": 42.133333
+      },
+      {
+        "frame": 1654,
+        "pts": 42.233333
+      }
+    ],
+    "native_first_visible_in_bracket": {
+      "frame": 1652,
+      "pts": 42.125
+    }
+  },
+  {
+    "scenario": 2,
+    "event": "form_saved",
+    "last_absent_pts": 46.46666666666667,
+    "first_present_pts": 46.5,
+    "tested_grid_fps": 30,
+    "native_candidates": [
+      {
+        "frame": 1855,
+        "pts": 46.475
+      },
+      {
+        "frame": 1856,
+        "pts": 46.491667
+      },
+      {
+        "frame": 1857,
+        "pts": 46.508333
+      }
+    ],
+    "native_first_visible_in_bracket": {
+      "frame": 1856,
+      "pts": 46.491667
+    }
+  }
+]

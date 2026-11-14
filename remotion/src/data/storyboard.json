@@ -1,0 +1,863 @@
+{
+  "Immad-01": [
+    {
+      "start": 0,
+      "end": 150,
+      "camera": [
+        "N",
+        "H"
+      ],
+      "sweep": 75,
+      "kind": "question",
+      "headline": "A conversation can feel successful.",
+      "lines": [
+        "Even when the information is wrong."
+      ],
+      "eyebrow": "THE QUESTION"
+    },
+    {
+      "start": 150,
+      "end": 454,
+      "camera": [
+        "H",
+        "W"
+      ],
+      "sweep": 75,
+      "kind": "comparison",
+      "headline": "When does chat help?",
+      "lines": [
+        "Chat-style onboarding",
+        "A traditional form"
+      ],
+      "eyebrow": "STRUCTURED INFORMATION"
+    },
+    {
+      "start": 454,
+      "end": 704,
+      "camera": [
+        "W",
+        "A"
+      ],
+      "sweep": 75,
+      "kind": "team",
+      "headline": "We are teamGARI.",
+      "lines": [
+        "Raja Suleman",
+        "Raj Lakhani",
+        "Awais Basheer",
+        "Muhammad Immad"
+      ],
+      "eyebrow": "TEAM C-10"
+    },
+    {
+      "start": 704,
+      "end": 930,
+      "camera": [
+        "A",
+        "N"
+      ],
+      "sweep": 75,
+      "kind": "task",
+      "headline": "One study-planner profile.",
+      "lines": [
+        "Courses",
+        "Exam dates",
+        "Work evenings"
+      ],
+      "eyebrow": "THE TASK"
+    },
+    {
+      "start": 930,
+      "end": 1210,
+      "camera": [
+        "N",
+        "H"
+      ],
+      "sweep": 75,
+      "kind": "criteria",
+      "headline": "Three questions.",
+      "lines": [
+        "How long does it take?",
+        "What information gets confirmed?",
+        "Can users check and correct it?"
+      ],
+      "eyebrow": "TIME / INFORMATION / CONTROL"
+    }
+  ],
+  "Immad-02": [
+    {
+      "start": 0,
+      "end": 60,
+      "camera": [
+        "N",
+        "H"
+      ],
+      "sweep": 60,
+      "kind": "disclosure",
+      "headline": "Before the demonstration.",
+      "lines": [],
+      "eyebrow": "READ THE EVIDENCE"
+    },
+    {
+      "start": 60,
+      "end": 270,
+      "camera": [
+        "H",
+        "G"
+      ],
+      "sweep": 75,
+      "kind": "disclosure",
+      "headline": "A scripted simulation.",
+      "lines": [
+        "Not a live language model."
+      ],
+      "eyebrow": "DEMO DISCLOSURE"
+    },
+    {
+      "start": 270,
+      "end": 440,
+      "camera": [
+        "G",
+        "G"
+      ],
+      "sweep": 75,
+      "kind": "disclosure",
+      "headline": "Deliberately programmed mistakes.",
+      "lines": [
+        "Illustrating possible failure modes."
+      ],
+      "eyebrow": "DEMO DISCLOSURE"
+    },
+    {
+      "start": 440,
+      "end": 571,
+      "camera": [
+        "G",
+        "N"
+      ],
+      "sweep": 75,
+      "kind": "disclosure",
+      "headline": "One team member\u2019s run.",
+      "lines": [
+        "Illustrative, not a validated comparison."
+      ],
+      "eyebrow": "n = 1"
+    }
+  ],
+  "Raj-01": [
+    {
+      "start": 0,
+      "end": 210,
+      "camera": [
+        "N",
+        "W"
+      ],
+      "sweep": 75,
+      "kind": "demo",
+      "headline": "Form on the left. Chat on the right.",
+      "lines": [
+        "Scripted simulation"
+      ],
+      "eyebrow": "SCENARIO 1 / CLEAR INPUT"
+    },
+    {
+      "start": 210,
+      "end": 495,
+      "camera": [
+        "W",
+        "N"
+      ],
+      "sweep": 75,
+      "kind": "demo",
+      "headline": "Two exams next week.",
+      "lines": [
+        "CS3014 + MT1003",
+        "Tuesday + Thursday evenings"
+      ],
+      "eyebrow": "SCENARIO 1 / CLEAR INPUT"
+    },
+    {
+      "start": 495,
+      "end": 838,
+      "camera": [
+        "N",
+        "R"
+      ],
+      "sweep": 75,
+      "kind": "demo",
+      "headline": "Review. Confirm.",
+      "lines": [
+        "Chat: displayed timer 8.6 s"
+      ],
+      "eyebrow": "CHAT SUMMARY",
+      "linesDelay": 291
+    },
+    {
+      "start": 838,
+      "end": 1131,
+      "camera": [
+        "R",
+        "L"
+      ],
+      "sweep": 75,
+      "kind": "demo",
+      "headline": "Individual exam dates.",
+      "lines": [
+        "Form: displayed timer 12.5 s"
+      ],
+      "eyebrow": "FORM ENTRY",
+      "linesDelay": 241
+    },
+    {
+      "start": 1131,
+      "end": 1516,
+      "camera": [
+        "L",
+        "W"
+      ],
+      "sweep": 75,
+      "kind": "demo",
+      "headline": "The outputs differ in detail.",
+      "lines": [
+        "Chat records the week.",
+        "The form records exact dates."
+      ],
+      "eyebrow": "COMPARE WHAT WAS CAPTURED"
+    }
+  ],
+  "Raj-02": [
+    {
+      "start": 0,
+      "end": 194,
+      "camera": [
+        "N",
+        "R"
+      ],
+      "sweep": 75,
+      "kind": "demo",
+      "headline": "\u201cExams are after the break\u2026\u201d",
+      "lines": [
+        "\u201cCS 3041\u201d",
+        "\u201cI work Mondays.\u201d"
+      ],
+      "eyebrow": "SCENARIO 2 / MESSY INPUT"
+    },
+    {
+      "start": 194,
+      "end": 395,
+      "camera": [
+        "R",
+        "R"
+      ],
+      "sweep": 75,
+      "kind": "demo",
+      "headline": "No exact exam date.",
+      "lines": [
+        "Mistyped code: CS3041",
+        "Intended code: CS3014"
+      ],
+      "eyebrow": "AMBIGUITY"
+    },
+    {
+      "start": 395,
+      "end": 768,
+      "camera": [
+        "R",
+        "R"
+      ],
+      "sweep": 75,
+      "kind": "demo",
+      "headline": "The message never gave that date.",
+      "lines": [
+        "Summary: 22 Nov 2026",
+        "Incorrect course code carried through."
+      ],
+      "eyebrow": "WATCH THE SUMMARY"
+    },
+    {
+      "start": 768,
+      "end": 933,
+      "camera": [
+        "R",
+        "H"
+      ],
+      "sweep": 75,
+      "kind": "demo",
+      "headline": "\u201cProfile saved.\u201d",
+      "lines": [
+        "Both incorrect values accepted."
+      ],
+      "eyebrow": "CONFIRMED \u2260 CORRECT",
+      "textDelay": 69,
+      "linesDelay": 112
+    },
+    {
+      "start": 933,
+      "end": 1347,
+      "camera": [
+        "H",
+        "W"
+      ],
+      "sweep": 75,
+      "kind": "demo",
+      "headline": "A programmed demonstration.",
+      "lines": [
+        "Not an observed language-model prediction.",
+        "What if the user misses the correction?"
+      ],
+      "eyebrow": "DESIGN QUESTION"
+    }
+  ],
+  "Raj-03": [
+    {
+      "start": 0,
+      "end": 223,
+      "camera": [
+        "N",
+        "L"
+      ],
+      "sweep": 75,
+      "kind": "demo",
+      "headline": "Required entries are missing.",
+      "lines": [
+        "Exam date",
+        "Work evenings"
+      ],
+      "eyebrow": "FORM RECOVERY"
+    },
+    {
+      "start": 223,
+      "end": 390,
+      "camera": [
+        "L",
+        "L"
+      ],
+      "sweep": 75,
+      "kind": "demo",
+      "headline": "An error summary identifies them.",
+      "lines": [
+        "Two missing entries \u2192 one \u2192 saved"
+      ],
+      "eyebrow": "FORM RECOVERY"
+    },
+    {
+      "start": 390,
+      "end": 514,
+      "camera": [
+        "L",
+        "L"
+      ],
+      "sweep": 75,
+      "kind": "demo",
+      "headline": "Correct and save.",
+      "lines": [
+        "Displayed timer: 18.7 s"
+      ],
+      "eyebrow": "FORM RECOVERY"
+    },
+    {
+      "start": 514,
+      "end": 720,
+      "camera": [
+        "L",
+        "L"
+      ],
+      "sweep": 75,
+      "kind": "demo",
+      "headline": "Missing required information caught.",
+      "lines": [
+        "This does not detect every wrong answer."
+      ],
+      "eyebrow": "LIMIT OF VALIDATION"
+    },
+    {
+      "start": 720,
+      "end": 924,
+      "camera": [
+        "L",
+        "W"
+      ],
+      "sweep": 75,
+      "kind": "demo",
+      "headline": "An explicit value.",
+      "lines": [
+        "The chat substitutes a date and accepts the typo."
+      ],
+      "eyebrow": "DESIGN CONTRAST"
+    }
+  ],
+  "Awais-01": [
+    {
+      "start": 0,
+      "end": 163,
+      "camera": [
+        "N",
+        "H"
+      ],
+      "sweep": 75,
+      "kind": "question",
+      "headline": "What do the results tell us?",
+      "lines": [],
+      "eyebrow": "INTERPRETING THE MEASUREMENTS"
+    },
+    {
+      "start": 163,
+      "end": 500,
+      "camera": [
+        "H",
+        "W"
+      ],
+      "sweep": 75,
+      "kind": "metrics",
+      "headline": "First, time.",
+      "lines": [
+        "Scenario 1 / Chat 8.6 s / Form 12.5 s",
+        "Scenario 2 / Chat 13.0 s / Form 18.7 s"
+      ],
+      "eyebrow": "DISPLAYED TIMES / n = 1"
+    },
+    {
+      "start": 500,
+      "end": 760,
+      "camera": [
+        "W",
+        "G"
+      ],
+      "sweep": 75,
+      "kind": "timing",
+      "headline": "Different starting points.",
+      "lines": [
+        "Form: first input.",
+        "Chat: message sent."
+      ],
+      "eyebrow": "TIMING RULES"
+    },
+    {
+      "start": 760,
+      "end": 980,
+      "camera": [
+        "G",
+        "G"
+      ],
+      "sweep": 75,
+      "kind": "timing",
+      "headline": "Message preparation is excluded.",
+      "lines": [
+        "Different levels of date detail."
+      ],
+      "eyebrow": "TIMING RULES"
+    },
+    {
+      "start": 980,
+      "end": 1129,
+      "camera": [
+        "G",
+        "H"
+      ],
+      "sweep": 75,
+      "kind": "question",
+      "headline": "Not a controlled test.",
+      "lines": [
+        "These timings do not prove chat is faster."
+      ],
+      "eyebrow": "CAUTION"
+    },
+    {
+      "start": 1129,
+      "end": 1392,
+      "camera": [
+        "H",
+        "L"
+      ],
+      "sweep": 75,
+      "kind": "errors",
+      "headline": "Second, errors.",
+      "lines": [
+        "Chat: two incorrect values accepted.",
+        "Form: missing entries blocked."
+      ],
+      "eyebrow": "MESSY SCENARIO"
+    },
+    {
+      "start": 1392,
+      "end": 1639,
+      "camera": [
+        "L",
+        "N"
+      ],
+      "sweep": 75,
+      "kind": "control",
+      "headline": "Third, control.",
+      "lines": [
+        "Showing information does not guarantee",
+        "that mistakes will be noticed."
+      ],
+      "eyebrow": "REVIEW \u2260 DETECTION"
+    }
+  ],
+  "Awais-02": [
+    {
+      "start": 0,
+      "end": 376,
+      "camera": [
+        "N",
+        "W"
+      ],
+      "sweep": 75,
+      "kind": "research",
+      "headline": "Published research.",
+      "lines": [
+        "A single-page form was fastest in one comparison.",
+        "A chatbot took longer in another."
+      ],
+      "eyebrow": "DIFFERENT STUDIES / DIFFERENT TASKS"
+    },
+    {
+      "start": 376,
+      "end": 736,
+      "camera": [
+        "W",
+        "G"
+      ],
+      "sweep": 75,
+      "kind": "coverage",
+      "headline": "Collecting target information.",
+      "lines": [
+        "Leaving information out differs from",
+        "counting wrong values."
+      ],
+      "eyebrow": "WEI ET AL. / PREPRINT REFERENCE"
+    },
+    {
+      "start": 736,
+      "end": 895,
+      "camera": [
+        "G",
+        "H"
+      ],
+      "sweep": 75,
+      "kind": "question",
+      "headline": "No universal ranking.",
+      "lines": [
+        "Different tasks and systems."
+      ],
+      "eyebrow": "RESEARCH CONTEXT"
+    },
+    {
+      "start": 895,
+      "end": 1176,
+      "camera": [
+        "H",
+        "N"
+      ],
+      "sweep": 75,
+      "kind": "question",
+      "headline": "An illustration of a design problem.",
+      "lines": [
+        "Not a measurement of real chatbot failure rates."
+      ],
+      "eyebrow": "EVIDENCE BOUNDARY"
+    }
+  ],
+  "Raja-01": [
+    {
+      "start": 0,
+      "end": 240,
+      "camera": [
+        "N",
+        "G"
+      ],
+      "sweep": 75,
+      "kind": "limits",
+      "headline": "Important limits.",
+      "lines": [
+        "Built by the team.",
+        "Tested with one team member.",
+        "Mistakes deliberately scripted."
+      ],
+      "eyebrow": "LIMITATIONS"
+    },
+    {
+      "start": 240,
+      "end": 473,
+      "camera": [
+        "G",
+        "H"
+      ],
+      "sweep": 75,
+      "kind": "limits",
+      "headline": "We cannot generalise.",
+      "lines": [
+        "To all users or real language models."
+      ],
+      "eyebrow": "LIMITATIONS"
+    },
+    {
+      "start": 473,
+      "end": 832,
+      "camera": [
+        "H",
+        "R"
+      ],
+      "sweep": 75,
+      "kind": "focus",
+      "headline": "Reaching Confirm took extra navigation.",
+      "lines": [
+        "Focus did not move to the new summary."
+      ],
+      "eyebrow": "KEYBOARD-ONLY PASS"
+    },
+    {
+      "start": 832,
+      "end": 1132,
+      "camera": [
+        "R",
+        "L"
+      ],
+      "sweep": 75,
+      "kind": "calendar",
+      "headline": "Difficulty dismissing the date picker.",
+      "lines": [
+        "Browser and platform may affect this."
+      ],
+      "eyebrow": "KEYBOARD-ONLY PASS"
+    },
+    {
+      "start": 1132,
+      "end": 1369,
+      "camera": [
+        "L",
+        "N"
+      ],
+      "sweep": 75,
+      "kind": "question",
+      "headline": "A visually clear interface is not enough.",
+      "lines": [
+        "Accessibility needs its own evaluation."
+      ],
+      "eyebrow": "ACCESSIBILITY"
+    }
+  ],
+  "Raja-02": [
+    {
+      "start": 0,
+      "end": 240,
+      "camera": [
+        "N",
+        "H"
+      ],
+      "sweep": 75,
+      "kind": "screenreader",
+      "headline": "We did not test with a screen reader.",
+      "lines": [
+        "A conversation log role alone is not verification."
+      ],
+      "eyebrow": "UNTESTED"
+    },
+    {
+      "start": 240,
+      "end": 479,
+      "camera": [
+        "H",
+        "G"
+      ],
+      "sweep": 75,
+      "kind": "screenreader",
+      "headline": "What needs testing?",
+      "lines": [
+        "Announcements",
+        "Focus order",
+        "Correction controls"
+      ],
+      "eyebrow": "ASSISTIVE TECHNOLOGY"
+    },
+    {
+      "start": 479,
+      "end": 740,
+      "camera": [
+        "G",
+        "W"
+      ],
+      "sweep": 75,
+      "kind": "marketing",
+      "headline": "Research evidence and marketing.",
+      "lines": [
+        "Typeform claim: secondhand vendor figure."
+      ],
+      "eyebrow": "SOURCE QUALITY"
+    },
+    {
+      "start": 740,
+      "end": 929,
+      "camera": [
+        "W",
+        "H"
+      ],
+      "sweep": 75,
+      "kind": "marketing",
+      "headline": "We did not test it.",
+      "lines": [
+        "Conversational forms are not LLM chat."
+      ],
+      "eyebrow": "EVIDENCE BOUNDARY"
+    },
+    {
+      "start": 929,
+      "end": 1210,
+      "camera": [
+        "H",
+        "R"
+      ],
+      "sweep": 75,
+      "kind": "privacy",
+      "headline": "Free text can invite over-disclosure.",
+      "lines": [
+        "An external service would add privacy considerations."
+      ],
+      "eyebrow": "FUTURE VERSION / CONDITIONAL"
+    },
+    {
+      "start": 1210,
+      "end": 1464,
+      "camera": [
+        "R",
+        "N"
+      ],
+      "sweep": 75,
+      "kind": "privacy",
+      "headline": "Fake data. Local scripted parser.",
+      "lines": [
+        "The current demonstration."
+      ],
+      "eyebrow": "PRIVACY"
+    }
+  ],
+  "Immad-03": [
+    {
+      "start": 0,
+      "end": 280,
+      "camera": [
+        "N",
+        "L"
+      ],
+      "sweep": 75,
+      "kind": "recommendation",
+      "headline": "Start with the information the task requires.",
+      "lines": [
+        "Known fields. Visible requirements."
+      ],
+      "eyebrow": "RECOMMENDATION"
+    },
+    {
+      "start": 280,
+      "end": 573,
+      "camera": [
+        "L",
+        "R"
+      ],
+      "sweep": 75,
+      "kind": "recommendation",
+      "headline": "Messy, narrative information.",
+      "lines": [
+        "Keep uncertainty visible.",
+        "Make corrections easy."
+      ],
+      "eyebrow": "RECOMMENDATION"
+    },
+    {
+      "start": 573,
+      "end": 820,
+      "camera": [
+        "R",
+        "W"
+      ],
+      "sweep": 75,
+      "kind": "hybrid",
+      "headline": "Free text \u2192 review \u2192 confirm.",
+      "lines": [
+        "Pre-fill editable form fields.",
+        "Let the user inspect and edit."
+      ],
+      "eyebrow": "PROPOSED IMPROVEMENT / NOT TESTED"
+    },
+    {
+      "start": 820,
+      "end": 1103,
+      "camera": [
+        "W",
+        "H"
+      ],
+      "sweep": 75,
+      "kind": "hybrid",
+      "headline": "Ask instead of guessing.",
+      "lines": [
+        "Missing date \u2192 ask.",
+        "Unrecognised course code \u2192 flag."
+      ],
+      "eyebrow": "PROPOSED IMPROVEMENT / NOT TESTED"
+    },
+    {
+      "start": 1103,
+      "end": 1330,
+      "camera": [
+        "H",
+        "G"
+      ],
+      "sweep": 75,
+      "kind": "next",
+      "headline": "D3 / D4 / D5.",
+      "lines": [
+        "Input-flow design.",
+        "Accessibility evaluation."
+      ],
+      "eyebrow": "PROJECT APPLICATION"
+    },
+    {
+      "start": 1330,
+      "end": 1547,
+      "camera": [
+        "G",
+        "W"
+      ],
+      "sweep": 75,
+      "kind": "next",
+      "headline": "What we would test next.",
+      "lines": [
+        "Real users and consistent timing.",
+        "Screen readers and repeated-run errors."
+      ],
+      "eyebrow": "NEXT STEPS"
+    },
+    {
+      "start": 1547,
+      "end": 1750,
+      "camera": [
+        "W",
+        "H"
+      ],
+      "sweep": 75,
+      "kind": "question",
+      "headline": "Understand and control what the system records.",
+      "lines": [],
+      "eyebrow": "THE KEY QUESTION"
+    },
+    {
+      "start": 1750,
+      "end": 1822,
+      "camera": [
+        "H",
+        "A"
+      ],
+      "sweep": 72,
+      "kind": "team",
+      "headline": "Thank you for watching.",
+      "lines": [
+        "Raja Suleman",
+        "Raj Lakhani",
+        "Awais Basheer",
+        "Muhammad Immad"
+      ],
+      "eyebrow": "TEAM C-10 / teamGARI"
+    }
+  ]
+}
