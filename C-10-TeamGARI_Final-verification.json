@@ -1,0 +1,13 @@
+{
+  "file": "C-10-TeamGARI_Final.mp4",
+  "bytes": 132024852,
+  "sha256": "4808f7c2f66fc44ebe20767419390ec58eb5a381fd6923c2b95a61b8472a8161",
+  "durationSeconds": 460.6,
+  "width": 3840,
+  "height": 1920,
+  "fps": "30/1",
+  "frames": 13818,
+  "audio": "aac",
+  "audioSampleRate": "48000",
+  "fullDecode": "passed"
+}
