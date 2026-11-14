@@ -136,6 +136,8 @@ teamgari-editorial-film/
         raj.png              Cobalt interlocking bridge
         awais.png            Violet prism and measurement rings
         raja.png             Emerald arch and frosted sphere
+      portraits/             Team-approved cutouts for introduction/closing
+        raja.png, raj.png, awais.png, immad.png
       fonts/
         InterVariable.woff2
         LICENSE-Inter.txt
@@ -287,6 +289,6 @@ This delivery includes a **short rendered technical proof**, not a completed ful
 
 ## 12. Provenance
 
-The ten supplied team recordings are the voices. The actual two supplied prototype recordings drive all demos. Original slides/PDF/HTML sources are retained. The new visual direction uses abstract geometric avatars and no generated human likenesses.
+The ten supplied team recordings are the voices. The actual two supplied prototype recordings drive all demos. Original slides/PDF/HTML sources are retained. Individual speaking sections use abstract geometric avatars. At the team’s later request, the introduction and closing use the previously approved portrait cutouts, ordered Raja Suleman, Raj Lakhani, Awais Basheer, Muhammad Immad.
 
 The three art-direction concepts and the transparent geometric-avatar sheet were generated with the available OpenAI image tool. Its interface did not expose a DALL·E 3 model selector. Reusable prompts and art specifications are in `docs/ART-DIRECTION.md`. The Inter font is redistributed with its included license. Code, editing and concept preparation were assisted by OpenAI Codex.

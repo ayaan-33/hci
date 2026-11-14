@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill} from 'remotion';
+import {AbsoluteFill,Img,staticFile} from 'remotion';
 import {SPEAKERS,STORYBOARD,speakerId,REFERENCES} from '../data/config';
 import {beatAt,cameraAt,clamp,enterEase,POSES,voiceAt} from '../motion';
 import {Avatar} from './Avatar';
@@ -10,9 +10,9 @@ import {Eyebrow,KineticText} from './Typography';
 import {Glass,Plane} from './Plane';
 import type {Manifest,Section,Voice,SpeakerId} from '../types';
 const SILENT:Voice={amplitude:0,low:0,mid:0,high:0,onsets:[],localFrame:0};
-const Team:React.FC<{localFrame:number;globalFrame:number;voice:Voice;active:SpeakerId}>=({localFrame,globalFrame,voice,active})=>{
+const Team:React.FC<{localFrame:number;globalFrame:number;voice:Voice;active:SpeakerId}>=({localFrame})=>{
  const order:SpeakerId[]=['raja','raj','awais','immad'];
- return <div style={{position:'absolute',left:220,top:610,display:'flex',gap:210,zIndex:21000}}>{order.map((id,i)=>{const e=enterEase((localFrame-i*5)/24);return <div key={id} style={{opacity:e,transform:`translateY(${80*(1-e)}px)`}}><Avatar speaker={id} voice={id===active?voice:SILENT} frame={globalFrame} size={640} showName={false}/><div style={{textAlign:'center',fontSize:43,fontWeight:550,color:'#e9e5dd',marginTop:-35}}>{SPEAKERS[id].name}</div></div>;})}</div>;
+ return <div style={{position:'absolute',left:220,top:550,display:'flex',gap:210,zIndex:21000}}>{order.map((id,i)=>{const e=enterEase((localFrame-i*5)/24);return <div key={id} style={{width:640,opacity:e,transform:`translateY(${60*(1-e)}px)`}}><Img src={staticFile(`assets/portraits/${id}.png`)} alt={SPEAKERS[id].name} style={{width:640,height:900,objectFit:'contain',display:'block'}}/><div style={{textAlign:'center',fontSize:43,fontWeight:550,color:'#e9e5dd',marginTop:35}}>{SPEAKERS[id].name}</div></div>;})}</div>;
 };
 const Captions:React.FC<{section:Section;frame:number}>=({section,frame})=>{
  const t=frame/30-section.audioStartSamples/48000;const cue=section.captions.find(c=>t>=c.start&&t<c.end);
@@ -51,5 +51,5 @@ export const ColdOpen:React.FC<{frame:number}>=({frame})=>{
 };
 export const Credits:React.FC<{frame:number}>=({frame})=>{
  const second=frame>=120;const refs=second?REFERENCES.slice(4):REFERENCES.slice(0,4);const fade=clamp((240-frame)/18);
- return <AbsoluteFill style={{fontFamily:'Inter,sans-serif',background:'#101114'}}><Background camera={POSES.N}/><AbsoluteFill style={{padding:'190px 220px',boxSizing:'border-box',opacity:fade}}><Eyebrow accent="#d6ab69">SOURCES & PRODUCTION</Eyebrow><div style={{fontSize:105,fontWeight:600,letterSpacing:'-.03em',color:'#f0ede5',marginTop:45}}>References</div><div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:70,marginTop:85}}>{refs.map(([title,sub])=><div key={title} style={{borderTop:'1px solid #ffffff30',paddingTop:32,minHeight:190}}><div style={{fontSize:43,lineHeight:1.3,color:'#ede8df'}}>{title}</div><div style={{fontSize:33,lineHeight:1.4,color:'#aeb6c2',marginTop:24}}>{sub}</div></div>)}</div><div style={{position:'absolute',left:220,right:220,bottom:130,fontSize:31,lineHeight:1.6,color:'#aab2bf'}}>Original narration and prototype: Team C-10 / teamGARI.<br/>Concept images, editing and animation assisted by OpenAI tools. Abstract avatars represent speakers; no synthetic human likenesses.</div></AbsoluteFill></AbsoluteFill>;
+ return <AbsoluteFill style={{fontFamily:'Inter,sans-serif',background:'#101114'}}><Background camera={POSES.N}/><AbsoluteFill style={{padding:'190px 220px',boxSizing:'border-box',opacity:fade}}><Eyebrow accent="#d6ab69">SOURCES & PRODUCTION</Eyebrow><div style={{fontSize:105,fontWeight:600,letterSpacing:'-.03em',color:'#f0ede5',marginTop:45}}>References</div><div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:70,marginTop:85}}>{refs.map(([title,sub])=><div key={title} style={{borderTop:'1px solid #ffffff30',paddingTop:32,minHeight:190}}><div style={{fontSize:43,lineHeight:1.3,color:'#ede8df'}}>{title}</div><div style={{fontSize:33,lineHeight:1.4,color:'#aeb6c2',marginTop:24}}>{sub}</div></div>)}</div><div style={{position:'absolute',left:220,right:220,bottom:130,fontSize:31,lineHeight:1.6,color:'#aab2bf'}}>Original narration and prototype: Team C-10 / teamGARI.<br/>Concept images, editing and animation assisted by OpenAI tools. Speaker portraits use the team-approved cutout assets.</div></AbsoluteFill></AbsoluteFill>;
 };
