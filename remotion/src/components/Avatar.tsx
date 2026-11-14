@@ -16,6 +16,6 @@ export const Avatar:React.FC<{speaker:SpeakerId;voice:Voice;frame:number;reading
    <Img alt={`${name}'s abstract geometric avatar`} src={staticFile(`assets/avatars/${speaker}.png`)} style={{width:'100%',height:'100%',objectFit:'contain',filter:`drop-shadow(0 0 ${6+voice.high*14*intensity}px ${accent}40)`}}/>
   </div>
   {live.flatMap(n=>[0,1].map(i=>{const t=clamp((voice.localFrame-n)/18),sign=i?1:-1;return <div key={`${n}-${i}`} style={{position:'absolute',left:size/2+sign*(35+t*45),top:size*.45-t*75,width:5*(1-t),height:5*(1-t),borderRadius:'50%',background:accent,opacity:.35*(1-t)}}/>;}))}
-  {showName?<div style={{position:'relative',fontSize:34,fontWeight:600,color:'#f2eee6',marginTop:8}}>{name}</div>:null}
+  {showName?<div style={{position:'relative',fontSize:32,fontWeight:600,color:'#f2eee6',marginTop:8,width:360,marginLeft:(size-360)/2,whiteSpace:'nowrap'}}>{name}</div>:null}
  </div>;
 };
