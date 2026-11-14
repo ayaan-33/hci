@@ -1,0 +1,72 @@
+[
+  {
+    "key": "Immad-01",
+    "speaker": "Muhammad Immad",
+    "start": 20,
+    "duration": 40.5,
+    "chapter": "The question"
+  },
+  {
+    "key": "Immad-02",
+    "speaker": "Muhammad Immad",
+    "start": 60.5,
+    "duration": 19.18,
+    "chapter": "Before the demonstration"
+  },
+  {
+    "key": "Raj-01",
+    "speaker": "Raj Lakhani",
+    "start": 79.68,
+    "duration": 50.5465,
+    "chapter": "01 / Clear input"
+  },
+  {
+    "key": "Raj-02",
+    "speaker": "Raj Lakhani",
+    "start": 130.22650000000002,
+    "duration": 44.9265,
+    "chapter": "02 / Messy input"
+  },
+  {
+    "key": "Raj-03",
+    "speaker": "Raj Lakhani",
+    "start": 175.15300000000002,
+    "duration": 30.8065,
+    "chapter": "03 / Form recovery"
+  },
+  {
+    "key": "Awais-01",
+    "speaker": "Awais Basheer",
+    "start": 205.95950000000002,
+    "duration": 54.6465,
+    "chapter": "Reading the measurements"
+  },
+  {
+    "key": "Awais-02",
+    "speaker": "Awais Basheer",
+    "start": 260.606,
+    "duration": 39.2065,
+    "chapter": "Research in context"
+  },
+  {
+    "key": "Raja-01",
+    "speaker": "Raja Suleman",
+    "start": 299.8125,
+    "duration": 45.6665,
+    "chapter": "Limitations & accessibility"
+  },
+  {
+    "key": "Raja-02",
+    "speaker": "Raja Suleman",
+    "start": 345.479,
+    "duration": 48.7865,
+    "chapter": "Screen readers, claims & privacy"
+  },
+  {
+    "key": "Immad-03",
+    "speaker": "Muhammad Immad",
+    "start": 394.2655,
+    "duration": 60.9,
+    "chapter": "A proposed way forward"
+  }
+]

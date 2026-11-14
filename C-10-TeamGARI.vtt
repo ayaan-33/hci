@@ -1,0 +1,485 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.120
+The scanner read the label. The system confirmed the route.
+
+2
+00:00:05.000 --> 00:00:07.600
+Every step worked, except the package went to the wrong
+
+3
+00:00:07.600 --> 00:00:12.240
+address. When the information is wrong, confirmation alone cannot make
+
+4
+00:00:12.240 --> 00:00:12.740
+it correct.
+
+5
+00:00:21.160 --> 00:00:25.280
+A conversation can feel successful even when the information is
+
+6
+00:00:25.280 --> 00:00:28.580
+wrong. That is the question behind our project: when collecting
+
+7
+00:00:28.580 --> 00:00:32.660
+structured information, when does chat help, and when is a
+
+8
+00:00:32.660 --> 00:00:37.155
+traditional form a better choice? We are Team C-10, teamGARI:
+
+9
+00:00:37.155 --> 00:00:42.967
+Raja Suleman, Raj Lakhani, Awais Basheer, and Muhammad Immad.
+
+10
+00:00:42.967 --> 00:00:46.500
+Our task is setting up a study-planner profile with courses,
+
+11
+00:00:46.800 --> 00:00:50.560
+exam dates, and work evenings. We compare the two interfaces
+
+12
+00:00:50.560 --> 00:00:54.480
+through three questions: how long does the interaction take, what
+
+13
+00:00:54.480 --> 00:00:58.820
+information gets confirmed, and how easily can the user check
+
+14
+00:00:58.820 --> 00:01:00.060
+and correct it?
+
+15
+00:01:01.260 --> 00:01:05.580
+Before the demonstration, one important distinction: our chat is a
+
+16
+00:01:05.580 --> 00:01:08.060
+scripted simulation, not a live language model.
+
+17
+00:01:08.600 --> 00:01:12.660
+Its mistakes were deliberately programmed to illustrate possible failure modes.
+
+18
+00:01:12.730 --> 00:01:16.290
+Our results come from one team member’s run, so they
+
+19
+00:01:16.290 --> 00:01:19.680
+are illustrative, not a validated comparison.
+
+20
+00:01:21.780 --> 00:01:24.400
+Here are the two versions of our prototype: the form
+
+21
+00:01:24.400 --> 00:01:26.440
+on the left and the scripted chat on the right.
+
+22
+00:01:26.880 --> 00:01:29.880
+In the first scenario, the student has two exams next
+
+23
+00:01:29.880 --> 00:01:35.180
+week, for CS3014 and MT1003, and works Tuesday and Thursday
+
+24
+00:01:35.560 --> 00:01:39.740
+evenings. In chat, the message produces a summary showing the
+
+25
+00:01:39.740 --> 00:01:42.700
+courses, the exam week, and the work evenings.
+
+26
+00:01:42.700 --> 00:01:45.880
+The tester confirms it, and the displayed timer stops at
+
+27
+00:01:46.080 --> 00:01:49.860
+8.6 seconds. On the form, the tester selects the courses,
+
+28
+00:01:49.960 --> 00:01:53.520
+enters individual exam dates, and chooses the work evenings.
+
+29
+00:01:54.160 --> 00:01:56.800
+The displayed timer stops at 12.5 seconds.
+
+30
+00:01:57.380 --> 00:02:00.760
+Both complete this scenario without the planted mistakes.
+
+31
+00:02:01.400 --> 00:02:04.900
+However, the outputs differ in detail: chat records the week,
+
+32
+00:02:05.220 --> 00:02:06.920
+while the form records exact dates.
+
+33
+00:02:07.600 --> 00:02:10.060
+Keep that difference in mind when comparing them.
+
+34
+00:02:10.227 --> 00:02:13.426
+Now the input is less precise: “Exams are after the
+
+35
+00:02:13.426 --> 00:02:16.886
+break, I’m in CS 3041, and I work Mondays.” There
+
+36
+00:02:16.886 --> 00:02:19.907
+is no exact exam date. The course code is also
+
+37
+00:02:19.907 --> 00:02:22.946
+mistyped: the intended code is CS3014.
+
+38
+00:02:23.407 --> 00:02:26.407
+Watch the chat summary. It supplies the twenty-second of November,
+
+39
+00:02:26.907 --> 00:02:29.527
+even though the message never gave that date.
+
+40
+00:02:30.166 --> 00:02:32.807
+It also carries the incorrect course code into the summary.
+
+41
+00:02:33.287 --> 00:02:36.227
+The tester highlights the date, but still selects Confirm.
+
+42
+00:02:36.926 --> 00:02:40.666
+The interface displays “Profile saved,” with both incorrect values accepted.
+
+43
+00:02:41.326 --> 00:02:43.826
+This is a programmed demonstration of the failure, not an
+
+44
+00:02:43.826 --> 00:02:49.727
+observed language-model prediction. The design question it illustrates is still
+
+45
+00:02:49.727 --> 00:02:53.347
+useful: does a confirmation button help if the user misses
+
+46
+00:02:53.347 --> 00:02:54.606
+what needs correcting?
+
+47
+00:02:55.153 --> 00:02:59.153
+On the form, the tester leaves the required exam date
+
+48
+00:02:59.373 --> 00:03:02.333
+and work evenings blank, then tries to save.
+
+49
+00:03:02.573 --> 00:03:04.933
+An error summary identifies the two missing entries.
+
+50
+00:03:05.573 --> 00:03:08.613
+The tester supplies the date, selects Monday, and saves successfully.
+
+51
+00:03:09.353 --> 00:03:11.813
+The displayed timer stops at 18.7 seconds.
+
+52
+00:03:12.273 --> 00:03:15.953
+The form catches missing required information in this run.
+
+53
+00:03:15.953 --> 00:03:18.453
+That does not mean it can detect every wrong answer.
+
+54
+00:03:18.813 --> 00:03:22.033
+The contrast is that this form demands an explicit value,
+
+55
+00:03:21.986 --> 00:03:25.473
+while our scripted chat substitutes a date and accepts the
+
+56
+00:03:25.473 --> 00:03:25.960
+typo.
+
+57
+00:03:28.840 --> 00:03:30.700
+What do these results actually tell us?
+
+58
+00:03:31.380 --> 00:03:35.280
+First, time. The displayed chat times were 8.6 seconds in
+
+59
+00:03:35.280 --> 00:03:38.740
+scenario one and 13 seconds in scenario two.
+
+60
+00:03:38.740 --> 00:03:42.180
+The form times were 12.5 and 18.7 seconds.
+
+61
+00:03:42.620 --> 00:03:45.460
+However, the timers start at different points.
+
+62
+00:03:45.900 --> 00:03:49.760
+The form starts timing at the first input; chat starts
+
+63
+00:03:49.760 --> 00:03:52.940
+when the message is sent, excluding message preparation.
+
+64
+00:03:52.940 --> 00:03:56.800
+The interfaces also collect different levels of date detail.
+
+65
+00:03:57.420 --> 00:04:01.640
+These are demonstration timings, not a controlled test proving that
+
+66
+00:04:01.640 --> 00:04:06.820
+chat is faster. Second, errors. In the messy scenario, the
+
+67
+00:04:06.820 --> 00:04:10.760
+chat accepts two incorrect values, while the form blocks missing
+
+68
+00:04:10.760 --> 00:04:15.700
+entries. Third, control. A summary gives users an opportunity to
+
+69
+00:04:15.700 --> 00:04:19.580
+review, but simply showing information does not guarantee that mistakes
+
+70
+00:04:19.580 --> 00:04:20.180
+will be noticed.
+
+71
+00:04:23.226 --> 00:04:25.306
+Our slides also bring in published research.
+
+72
+00:04:25.886 --> 00:04:28.566
+The studies we cite report that a single-page form was
+
+73
+00:04:28.566 --> 00:04:32.066
+fastest in one comparison, and that a chatbot took longer
+
+74
+00:04:32.066 --> 00:04:35.426
+in another. The cited work by Wei and colleagues examines
+
+75
+00:04:35.426 --> 00:04:39.626
+how well a language-model chatbot collects target information, including the
+
+76
+00:04:39.626 --> 00:04:42.926
+risk of leaving information out. That is a different measure
+
+77
+00:04:42.926 --> 00:04:46.846
+from simply counting wrong values. These studies use different tasks
+
+78
+00:04:46.846 --> 00:04:49.526
+and systems, so their results should not be treated as
+
+79
+00:04:49.696 --> 00:04:54.306
+one universal ranking. Our demonstration illustrates a design problem.
+
+80
+00:04:54.646 --> 00:04:57.566
+It does not establish how often real chatbots fail, or
+
+81
+00:04:57.566 --> 00:04:59.526
+overturn findings from larger studies.
+
+82
+00:04:59.812 --> 00:05:02.532
+There are important limits to our work.
+
+83
+00:05:02.712 --> 00:05:06.152
+We built the prototype ourselves, tested it with one team
+
+84
+00:05:06.152 --> 00:05:09.112
+member, and deliberately scripted the chat’s mistakes.
+
+85
+00:05:09.812 --> 00:05:13.592
+We cannot generalise these results to all users or to
+
+86
+00:05:13.592 --> 00:05:18.472
+real language models. Our keyboard-only pass also found problems in
+
+87
+00:05:18.472 --> 00:05:24.012
+both interfaces. In chat, reaching Confirm required moving through other
+
+88
+00:05:24.012 --> 00:05:27.552
+controls because focus was not moved to the new summary.
+
+89
+00:05:27.552 --> 00:05:32.072
+In the form, we encountered difficulty dismissing the browser’s date
+
+90
+00:05:32.072 --> 00:05:35.732
+picker with the keyboard. That behaviour may depend on the
+
+91
+00:05:35.732 --> 00:05:41.132
+browser and platform. These observations show why accessibility needs its
+
+92
+00:05:41.132 --> 00:05:45.232
+own evaluation. A visually clear interface is not enough.
+
+93
+00:05:45.479 --> 00:05:47.939
+We did not test with a screen reader.
+
+94
+00:05:47.939 --> 00:05:51.979
+The prototype includes a conversation log role, but that alone
+
+95
+00:05:51.979 --> 00:05:55.079
+does not verify that new replies are announced correctly.
+
+96
+00:05:55.419 --> 00:05:58.619
+We would need to test announcements, focus order, and correction
+
+97
+00:05:58.619 --> 00:06:03.699
+controls with assistive technology. We also distinguish research evidence from
+
+98
+00:06:03.699 --> 00:06:08.179
+marketing. The Typeform completion claim discussed in our slides is
+
+99
+00:06:08.169 --> 00:06:12.579
+a secondhand vendor claim about conversational forms, not evidence that
+
+100
+00:06:12.626 --> 00:06:16.039
+language-model chat is better. We did not test it.
+
+101
+00:06:16.459 --> 00:06:20.019
+Finally, free text can invite people to share more information
+
+102
+00:06:20.019 --> 00:06:23.759
+than necessary. If a future version sends messages to an
+
+103
+00:06:23.759 --> 00:06:27.539
+external service, that creates additional privacy considerations.
+
+104
+00:06:28.279 --> 00:06:34.266
+Our demonstration uses fake data and a local scripted parser.
+
+105
+00:06:35.246 --> 00:06:38.746
+Our recommendation is to start with the information the task
+
+106
+00:06:38.746 --> 00:06:42.686
+requires. When the fields are known and correctness matters, a
+
+107
+00:06:42.686 --> 00:06:46.525
+form makes those requirements visible. Chat can help people express
+
+108
+00:06:46.535 --> 00:06:50.645
+messy or narrative information, but uncertainty needs to stay visible,
+
+109
+00:06:50.645 --> 00:06:52.725
+and corrections need to be easy.
+
+110
+00:06:53.366 --> 00:06:57.266
+For this task, we propose a hybrid: let free text
+
+111
+00:06:57.275 --> 00:07:00.525
+pre-fill a form, then let the user inspect and edit
+
+112
+00:07:00.525 --> 00:07:03.766
+the fields before confirming. Ask for missing dates instead of
+
+113
+00:07:03.766 --> 00:07:07.826
+guessing them, and flag an unrecognised course code.
+
+114
+00:07:08.285 --> 00:07:11.045
+This is our proposed improvement, not a feature we tested.
+
+115
+00:07:11.045 --> 00:07:15.085
+For our project, this informs the D3 and D4 input-flow
+
+116
+00:07:15.085 --> 00:07:17.345
+design and the D5 accessibility evaluation.
+
+117
+00:07:18.045 --> 00:07:21.225
+Next, we would test with real users, use consistent timing
+
+118
+00:07:21.225 --> 00:07:25.345
+rules, check screen-reader behaviour, and measure errors across repeated runs.
+
+119
+00:07:25.845 --> 00:07:28.366
+The key question is not just whether the interaction feels
+
+120
+00:07:28.366 --> 00:07:32.425
+natural. It is whether people can understand and control what
+
+121
+00:07:32.425 --> 00:07:34.425
+the system records. Thank you for watching.
